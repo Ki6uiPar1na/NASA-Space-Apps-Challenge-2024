@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Earth Assets Viewer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 text-white w-full p-4 shadow-lg">
+    <div class="container mx-auto flex flex-wrap justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img class="w-10 h-10 rounded-full" src="/resource/Checkmate Beta.jpeg" alt="Checkmate Beta">
+        <span class="text-lg font-bold">Checkmate Beta</span>
+      </div>
+      <button class="md:hidden block text-white focus:outline-none" id="navbar-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <ul id="navbar" class="hidden md:flex md:space-x-6 items-center md:flex-row mt-4 md:mt-0">
+        <li><a href="/index.html" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Home</a></li>
+        <li class="group relative">
+          <a href="#" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Urban Farming</a>
+          <ul class="submenu absolute hidden group-hover:block bg-green-600 mt-2 py-2 shadow-lg w-48 z-10">
+            <li><a href="/climate_resilient_crops.html" class="block px-4 py-2 hover:bg-green-700">Climate-Resilient Crops</a></li>
+            <li><a href="/balcony_garden.html" class="block px-4 py-2 hover:bg-green-700">Balcony Gardens</a></li>
+            <li><a href="/rooftop_farm.html" class="block px-4 py-2 hover:bg-green-700">Rooftop Farms</a></li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="#" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Community</a>
+          <ul class="submenu absolute hidden group-hover:block bg-green-600 mt-2 py-2 shadow-lg w-48 z-10">
+            <li><a href="/mentorship_program.html" class="block px-4 py-2 hover:bg-green-700">Mentorship Program</a></li>
+            <li><a href="/success_story.html" class="block px-4 py-2 hover:bg-green-700">Success Stories</a></li>
+            <li><a href="/events_webinars.html" class="block px-4 py-2 hover:bg-green-700">Events & Webinars</a></li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="#" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Environmental Data</a>
+          <ul class="submenu absolute hidden group-hover:block bg-green-600 mt-2 py-2 shadow-lg w-48 z-10">
+            <li><a href="/nasa_earth_data.html" class="block px-4 py-2 hover:bg-green-700">NASA Earth Data</a></li>
+            <li><a href="/local_enviornment.html" class="block px-4 py-2 hover:bg-green-700">Local Environmental Insights</a></li>
+          </ul>
+        </li>
+        <li class="group relative">
+          <a href="#" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Climate Action</a>
+          <ul class="submenu absolute hidden group-hover:block bg-green-600 mt-2 py-2 shadow-lg w-48 z-10">
+            <li><a href="/climate_impact.html" class="block px-4 py-2 hover:bg-green-700">Climate Change Impacts</a></li>
+            <li><a href="/sustainable_practice.html" class="block px-4 py-2 hover:bg-green-700">Sustainable Practices</a></li>
+            <li><a href="/woman_in_climate_leadership.html" class="block px-4 py-2 hover:bg-green-700">Women in Climate Leadership</a></li>
+          </ul>
+        </li>
+        <li><a href="/about_us.html" class="nav-link hover:bg-green-700 px-4 py-2 rounded">About Us</a></li>
+        <li><a href="/join_us.html" class="nav-link hover:bg-green-700 px-4 py-2 rounded">Join Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container mx-auto p-8 bg-white rounded-lg shadow-lg max-w-4xl mt-6">
+    <h1 class="text-4xl font-bold text-center text-blue-700 mb-8">NASA Earth Assets Viewer</h1>
+
+    <!-- Form Section -->
+    <div class="mb-8">
+      <form id="nasaAssetsForm" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="flex flex-col">
+          <label for="latitude" class="text-lg font-semibold mb-2 text-blue-700">Latitude:</label>
+          <input type="text" id="latitude" class="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter Latitude" required>
+        </div>
+        <div class="flex flex-col">
+          <label for="longitude" class="text-lg font-semibold mb-2 text-blue-700">Longitude:</label>
+          <input type="text" id="longitude" class="border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter Longitude" required>
+        </div>
+        <div class="flex flex-col justify-center">
+          <button type="submit" class="bg-blue-600 text-white py-3 px-5 rounded-lg font-semibold hover:bg-blue-700 focus:ring-4 focus:ring-blue-400">Get Assets</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Results Section -->
+    <div id="resultsContainer" class="hidden mt-8">
+      <h2 class="text-3xl font-semibold mb-6 text-blue-600">Earth Asset Data</h2>
+      <div id="assetInfo" class="p-6 bg-gray-50 rounded-lg shadow-md"></div>
+
+      <!-- Image Information Section -->
+      <div class="mt-8 p-6 bg-white rounded-lg shadow-md">
+        <h3 class="text-2xl font-semibold mb-4 text-green-700">Image Information</h3>
+        <p><strong>Title:</strong> <span id="imageTitle">Green Coverage Overview</span></p>
+        <p><strong>Description:</strong> <span id="imageDescription">This image shows the Earth's surface with a focus on green coverage and vegetation.</span></p>
+        <p><strong>Green Coverage Percentage:</strong> <span id="greenPercentage">45%</span></p>
+        <img id="imagePreview" class="w-full h-auto rounded-lg shadow-lg mt-6" src="" alt="NASA Earth Asset">
+      </div>
+    </div>
+
+    <!-- Error Message -->
+    <p id="errorMessage" class="text-red-500 font-semibold mt-6"></p>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar');
+
+    navbarToggle.addEventListener('click', () => {
+      navbarMenu.classList.toggle('hidden');
+    });
+
+    document.getElementById('nasaAssetsForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const lat = document.getElementById('latitude').value;
+      const lon = document.getElementById('longitude').value;
+      const apiKey = 'KTudOahsXyJg0Yc8SVsSzwwZYNLoWWH5PfZm3ZbS'; // Replace with your actual API key for production use
+      const date = new Date().toISOString().split('T')[0];
+
+      const url = `https://api.nasa.gov/planetary/earth/assets?lat=${lat}&lon=${lon}&dim=0.1&date=${date}&api_key=${apiKey}`;
+      
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          if (data.url) {
+            document.getElementById('resultsContainer').classList.remove('hidden');
+            document.getElementById('imagePreview').src = data.url;
+            document.getElementById('assetInfo').innerHTML = `
+              <p><strong>Latitude:</strong> ${lat}</p>
+              <p><strong>Longitude:</strong> ${lon}</p>
+              <p><strong>Date:</strong> ${date}</p>
+              <p><strong>NASA Image URL:</strong> <a href="${data.url}" target="_blank" class="text-blue-600">${data.url}</a></p>
+            `;
+          } else {
+            document.getElementById('errorMessage').textContent = 'No assets found for the given coordinates.';
+          }
+        })
+        .catch(error => {
+          document.getElementById('errorMessage').textContent = 'Error fetching data from NASA API.';
+        });
+    });
+  </script>
+</body>
+</html>
