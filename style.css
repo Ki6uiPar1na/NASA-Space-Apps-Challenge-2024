@@ -1,0 +1,35 @@
+
+    /* Ensure submenu is hidden initially */
+    .submenu {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    /* Show submenu on hover */
+    .group:hover .submenu {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Position the submenu */
+    .submenu {
+      position: absolute; /* Positioning the submenu correctly */
+      background-color: #2c7a4b; /* Match with main nav background */
+      z-index: 10; /* Ensure it's above other elements */
+      margin-top: 0.5rem; /* Space between menu item and submenu */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    }
+
+    /* Style the links */
+    .nav-link {
+      padding: 0.5rem 1rem; /* Padding for links */
+      text-decoration: none; /* Remove underline */
+      color: white; /* Text color */
+      transition: background-color 0.3s; /* Smooth background transition */
+    }
+
+    /* Change background on hover */
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+    }

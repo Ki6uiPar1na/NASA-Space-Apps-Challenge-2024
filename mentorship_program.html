@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorship Program</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hover effect for course cards */
+    .hover-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="text-lg font-bold">Green Empowerment</div>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Urban Farming</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Mentorship Program</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1612090358073-9d80133028db?auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold">Mentorship Program</h1>
+      <p class="mt-4 text-lg md:text-xl">Empower yourself with free courses on sustainable farming and climate resilience</p>
+    </div>
+  </section>
+
+  <!-- Mentorship Courses Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-green-600">Free Mentorship Courses</h2>
+      <p class="text-lg mb-8">Our mentorship program offers a range of free courses designed to equip women and communities with the skills they need to engage in sustainable farming, tackle climate challenges, and promote green spaces. Explore our course offerings below and join us in building a sustainable future.</p>
+
+      <!-- Courses Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Course 1: Rooftop Farming -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1582148001922-d1749ae65c08?auto=format&fit=crop&w=800&q=80" alt="Rooftop Farming" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Rooftop Farming</h3>
+          <p class="text-gray-700">Learn how to transform unused rooftop spaces into productive farms that contribute to local food security and environmental sustainability.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+        <!-- Course 2: Climate-Resilient Crops -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1598959277949-25eafc6f1b52?auto=format&fit=crop&w=800&q=80" alt="Climate-Resilient Crops" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Climate-Resilient Crops</h3>
+          <p class="text-gray-700">Discover crops that thrive in changing climate conditions, ensuring a sustainable and resilient food supply in urban areas.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+        <!-- Course 3: Balcony Gardening -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1582480174254-20a9856745d1?auto=format&fit=crop&w=800&q=80" alt="Balcony Gardening" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Balcony Gardening</h3>
+          <p class="text-gray-700">Maximize small spaces by learning to grow a variety of fruits, vegetables, and herbs on your balcony, promoting sustainability in urban living.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+        <!-- Course 4: Urban Composting -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1603294900153-056e83e32b02?auto=format&fit=crop&w=800&q=80" alt="Urban Composting" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Urban Composting</h3>
+          <p class="text-gray-700">Learn the basics of composting in urban areas and how it can reduce waste, improve soil health, and support sustainable gardening practices.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+        <!-- Course 5: Women in Climate Leadership -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba7c728bd4?auto=format&fit=crop&w=800&q=80" alt="Women in Climate Leadership" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Women in Climate Leadership</h3>
+          <p class="text-gray-700">Explore the role of women in leading climate action initiatives and learn how you can become a leader in sustainable practices.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+        <!-- Course 6: Sustainable Water Management -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1564573421269-7f1fda517f97?auto=format&fit=crop&w=800&q=80" alt="Sustainable Water Management" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-green-600 mb-2">Sustainable Water Management</h3>
+          <p class="text-gray-700">Learn the importance of water conservation and how to implement sustainable water management techniques in urban farms and gardens.</p>
+          <a href="#" class="mt-4 inline-block text-yellow-500 font-semibold">Enroll Now →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Green Empowerment Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

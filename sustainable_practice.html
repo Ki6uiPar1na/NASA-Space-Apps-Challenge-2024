@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Practices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles */
+    .practice-card {
+      transition: transform 0.3s ease;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+
+    .practice-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-green-700 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="text-lg font-bold">Sustainable Practices</div>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Sustainable Practices</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Events</a></li>
+        <li><a href="#" class="hover:text-yellow-400">About Us</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1528912578802-9e1aa2eb573c?auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-green-300">Embrace Sustainable Practices</h1>
+      <p class="mt-4 text-lg md:text-xl">Join us in making a positive impact on our planet through eco-friendly practices.</p>
+    </div>
+  </section>
+
+  <!-- Sustainable Practices Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-6 text-green-600 text-center">Our Sustainable Practices</h2>
+      <p class="text-lg mb-12 text-center">Explore our key practices that promote sustainability and environmental stewardship.</p>
+
+      <!-- Practices Overview -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">1. Urban Gardening</h3>
+          <img src="https://images.unsplash.com/photo-1526406478767-52ebc8bc5293?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHwxfHx8fHx8fHwxNjU2NjQxODc1&ixlib=rb-1.2.1&q=80&w=400" alt="Urban Gardening" class="mb-4 rounded-md">
+          <p>Transform small spaces into green havens with urban gardening, promoting biodiversity and local food production.</p>
+        </div>
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">2. Composting</h3>
+          <img src="https://images.unsplash.com/photo-1617935880347-2176b0a9c9b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHwyfHx8fHx8fHwxNjU2NjQyMDU5&ixlib=rb-1.2.1&q=80&w=400" alt="Composting" class="mb-4 rounded-md">
+          <p>Reduce waste by composting organic materials, enriching the soil and decreasing landfill contributions.</p>
+        </div>
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">3. Renewable Energy</h3>
+          <img src="https://images.unsplash.com/photo-1555949946-37685c2f5757?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHwyfHx8fHx8fHwxNjU2NjQyMjA0&ixlib=rb-1.2.1&q=80&w=400" alt="Renewable Energy" class="mb-4 rounded-md">
+          <p>Invest in renewable energy sources like solar and wind to reduce carbon footprint and promote clean energy.</p>
+        </div>
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">4. Water Conservation</h3>
+          <img src="https://images.unsplash.com/photo-1617983180961-9f9c28f4f038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHw0fHx8fHx8fHwxNjU2NjQyMjU4&ixlib=rb-1.2.1&q=80&w=400" alt="Water Conservation" class="mb-4 rounded-md">
+          <p>Implement water-saving techniques such as rainwater harvesting and drip irrigation to promote sustainable water usage.</p>
+        </div>
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">5. Eco-Friendly Transportation</h3>
+          <img src="https://images.unsplash.com/photo-1500528232-7e0d2aee3ff7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHw1fHx8fHx8fHwxNjU2NjQyMjgw&ixlib=rb-1.2.1&q=80&w=400" alt="Eco-Friendly Transportation" class="mb-4 rounded-md">
+          <p>Encourage the use of public transport, biking, and walking to reduce emissions and foster a healthy lifestyle.</p>
+        </div>
+        <div class="practice-card p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-4 text-green-700">6. Sustainable Consumption</h3>
+          <img src="https://images.unsplash.com/photo-1603098287473-3b84e2310b89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg0MzB8MHwxfGFsbHw2fHx8fHx8fHwxNjU2NjQyMjk3&ixlib=rb-1.2.1&q=80&w=400" alt="Sustainable Consumption" class="mb-4 rounded-md">
+          <p>Support local businesses and choose sustainably sourced products to foster a circular economy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-12 bg-green-200">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 text-green-700">Get Involved in Sustainable Practices</h2>
+      <p class="text-lg mb-4">Together, we can make a difference in combating climate change and promoting sustainability.</p>
+      <a href="#" class="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600">Join Our Community →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Sustainable Practices. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

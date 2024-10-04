@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Container for Cards -->
+    <div class="container mx-auto py-12 px-4">
+        <h1 class="text-5xl font-bold text-green-600 text-center mb-8">Explore Our Gardening Resources</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="window.location.href='/rooftop_gurden.html'">
+                <img src="https://source.unsplash.com/featured/?rooftop-garden" alt="Rooftop Garden" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-green-700">Rooftop Gardening</h2>
+                    <p class="text-gray-700 mt-2">Learn how to transform your rooftop into a lush garden. Discover plants that thrive in urban settings.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="window.location.href='balcony-garden.html'">
+                <img src="https://source.unsplash.com/featured/?balcony-garden" alt="Balcony Garden" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-green-700">Balcony Gardening</h2>
+                    <p class="text-gray-700 mt-2">Maximize your small space with a balcony garden. Get tips on planting and maintaining your urban oasis.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-white rounded-lg overflow-hidden shadow-lg cursor-pointer" onclick="window.location.href='climate-resilient.html'">
+                <img src="https://source.unsplash.com/featured/?climate-resilient-crops" alt="Climate Resilient Crops" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold text-green-700">Climate Resilient Crops</h2>
+                    <p class="text-gray-700 mt-2">Explore crops that can withstand climate challenges and contribute to sustainable farming practices.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Stay Tuned Section in the middle -->
+        <div class="flex items-center justify-center text-center w-full h-[500px] my-8">
+            <div class="p-6">
+                <h1 class="text-3xl font-bold text-green-600">Stay Tuned.....</h1>
+                <p class="mt-2 text-gray-700">More exciting resources are coming soon! Check back regularly for updates.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sustainable Gardening. All Rights Reserved.</p>
+            <p class="text-sm">Follow us on social media for updates and events.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

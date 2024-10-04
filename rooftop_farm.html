@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooftop Farms</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hover zoom effect on images */
+    .hover-zoom:hover img {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    /* Underline effect on heading hover */
+    .hover-underline:hover h3 {
+      text-decoration: underline;
+      color: #059669; /* Green color for headings */
+      transition: color 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="text-lg font-bold">Green Empowerment</div>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Urban Farming</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Resources</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1553356084-6e52c33f3770?auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold">Rooftop Farms</h1>
+      <p class="mt-4 text-lg md:text-xl">Empowering Communities, Greening Our Cities</p>
+    </div>
+  </section>
+
+  <!-- Rooftop Farms Information Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4 text-gray-700">
+      <h2 class="text-3xl font-bold mb-6 text-green-600">Why Rooftop Farms Matter</h2>
+      <p class="text-lg mb-6">Rooftop farming is a transformative urban solution that promotes sustainable agriculture in densely populated areas. As cities continue to expand, the available land for traditional farming decreases. Rooftop farms utilize unused building spaces, providing a practical way to grow food and improve urban sustainability.</p>
+      
+      <p class="text-lg mb-6">In the context of gender equality, rooftop farming provides a unique opportunity for women to engage in agricultural activities, gain economic independence, and contribute to household food security. Empowering women to participate in sustainable agriculture fosters a resilient community capable of addressing both environmental and social challenges.</p>
+
+      <!-- Farm 1: Community Rooftop Farm -->
+      <div class="flex flex-col md:flex-row mb-12 hover-zoom hover-underline">
+        <img src="https://images.unsplash.com/photo-1576511455768-bf4417bdefc5?auto=format&fit=crop&w=800&q=80" alt="Community Rooftop Farm" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6 transition duration-300 ease-in-out">
+        <div class="md:flex-1">
+          <h3 class="text-2xl font-bold mb-2">Community Rooftop Farms</h3>
+          <p>Community rooftop farms bring neighbors together to cultivate crops, share resources, and foster social interaction. These farms offer a solution for food production while enhancing social cohesion, improving mental health, and empowering women to lead sustainable farming initiatives.</p>
+        </div>
+      </div>
+
+      <!-- Farm 2: Educational Rooftop Farms -->
+      <div class="flex flex-col md:flex-row-reverse mb-12 hover-zoom hover-underline">
+        <img src="https://images.unsplash.com/photo-1586286632486-64d6a7e07a9d?auto=format&fit=crop&w=800&q=80" alt="Educational Rooftop Farm" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:ml-6 transition duration-300 ease-in-out">
+        <div class="md:flex-1">
+          <h3 class="text-2xl font-bold mb-2">Educational Rooftop Farms</h3>
+          <p>Incorporating rooftop farming into schools and universities offers hands-on learning experiences. These farms teach students about climate change, agriculture, and food security, while providing them with skills to combat environmental challenges. Women leaders in this space serve as mentors and role models.</p>
+        </div>
+      </div>
+
+      <!-- Farm 3: Vertical Rooftop Farms -->
+      <div class="flex flex-col md:flex-row mb-12 hover-zoom hover-underline">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80" alt="Vertical Rooftop Farm" class="w-full md:w-1/3 rounded-lg mb-4 md:mb-0 md:mr-6 transition duration-300 ease-in-out">
+        <div class="md:flex-1">
+          <h3 class="text-2xl font-bold mb-2">Vertical Rooftop Farms</h3>
+          <p>Vertical farming systems on rooftops optimize space usage by growing crops in stacked layers. This approach increases food production capacity while minimizing water usage and environmental impact. Women are at the forefront of managing these innovative systems in urban areas.</p>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <p class="text-lg">Rooftop farming is a sustainable, eco-friendly solution for urban food production. By transforming rooftops into green spaces, we can empower women, promote community building, and combat the effects of climate change. Join us in creating a greener, more equitable world.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Green Empowerment Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

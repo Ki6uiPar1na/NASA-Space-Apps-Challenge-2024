@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Webinars</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Card hover effect */
+    .hover-card:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="text-lg font-bold">Checkmate Beta</div>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Events & Webinars</a></li>
+        <li><a href="#" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto h-full flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold">Events & Webinars</h1>
+      <p class="mt-4 text-lg md:text-xl">Join us for engaging events and webinars to elevate your skills and knowledge!</p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-blue-600 text-center">Upcoming Events & Webinars</h2>
+      <p class="text-lg mb-12 text-center">Check out our upcoming events and webinars designed to foster learning and networking.</p>
+
+      <!-- Events Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Event 1 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1584515971433-95e73e4d1787?auto=format&fit=crop&w=800&q=80" alt="Webinar on Sustainable Practices" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Webinar on Sustainable Practices</h3>
+          <p class="text-gray-700 mb-4">Date: October 15, 2024</p>
+          <p class="text-gray-700 mb-4">Join us for a comprehensive webinar discussing sustainable practices in urban farming. Learn from experts in the field!</p>
+          <a href="#" class="text-yellow-500 font-semibold">Register Now →</a>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1518049571881-daa09d0a11f5?auto=format&fit=crop&w=800&q=80" alt="Rooftop Farming Workshop" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Rooftop Farming Workshop</h3>
+          <p class="text-gray-700 mb-4">Date: November 10, 2024</p>
+          <p class="text-gray-700 mb-4">Participate in our hands-on workshop where you’ll learn how to create your own rooftop garden!</p>
+          <a href="#" class="text-yellow-500 font-semibold">Reserve Your Spot →</a>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1592171557270-d1572ff12d4d?auto=format&fit=crop&w=800&q=80" alt="Webinar on Climate Resilience" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Webinar on Climate Resilience</h3>
+          <p class="text-gray-700 mb-4">Date: December 5, 2024</p>
+          <p class="text-gray-700 mb-4">Join experts as they share insights on building climate resilience through innovative agricultural practices.</p>
+          <a href="#" class="text-yellow-500 font-semibold">Sign Up →</a>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1573497499217-2fd064e5039b?auto=format&fit=crop&w=800&q=80" alt="Panel Discussion on Urban Gardening" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Panel Discussion on Urban Gardening</h3>
+          <p class="text-gray-700 mb-4">Date: January 20, 2025</p>
+          <p class="text-gray-700 mb-4">Engage with industry leaders as they discuss the future of urban gardening and its impact on communities.</p>
+          <a href="#" class="text-yellow-500 font-semibold">Join the Discussion →</a>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1514970505013-cdc0a02cfc26?auto=format&fit=crop&w=800&q=80" alt="Networking Event for Urban Farmers" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Networking Event for Urban Farmers</h3>
+          <p class="text-gray-700 mb-4">Date: February 15, 2025</p>
+          <p class="text-gray-700 mb-4">Connect with fellow urban farmers, share experiences, and learn about collaborative opportunities in the community.</p>
+          <a href="#" class="text-yellow-500 font-semibold">Get Tickets →</a>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover-card">
+          <img src="https://images.unsplash.com/photo-1542346030-0064172829de?auto=format&fit=crop&w=800&q=80" alt="Sustainable Agriculture Expo" class="rounded-lg mb-4">
+          <h3 class="text-2xl font-bold text-blue-600 mb-2">Sustainable Agriculture Expo</h3>
+          <p class="text-gray-700 mb-4">Date: March 10, 2025</p>
+          <p class="text-gray-700 mb-4">Join us for a comprehensive expo featuring the latest innovations in sustainable agriculture and urban farming techniques.</p>
+          <a href="#" class="text-yellow-500 font-semibold">Learn More →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Checkmate Beta. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
