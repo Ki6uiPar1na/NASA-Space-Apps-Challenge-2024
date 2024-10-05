@@ -94,7 +94,7 @@
 <ol>
     <li><strong>Visit the Website:</strong> Check out the live website hosted on GitHub Pages to explore the project.</li>
     <li><strong>Clone the Repository:</strong> 
-        <pre><code>git clone https://github.com/Ki6uiPar1na/NASA-Space-Apps-Challenge-2024/tree/main</code></pre>
+        <pre><code>git clone https://github.com/Ki6uiPar1na/NASA-Space-Apps-Challenge-2024.git</code></pre>
     </li>
     <li><strong>Open <code>index.html</code></strong> in your browser to interact with the project locally.</li>
 </ol>
