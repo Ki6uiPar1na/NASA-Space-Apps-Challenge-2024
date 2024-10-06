@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
 
-<h1>Gender & Climate Action - Team CheckMate Beta</h1>
+<h1>Green Guardians: Action for earth, Equality for all</h1>
 
 <p>Today, the world faces two interconnected challenges: climate change and gender inequality. While they may seem separate, climate change worsens existing inequalities, particularly for women in vulnerable communities. At CheckMate Beta, we aim to address both of these critical issues with innovative, sustainable solutions that empower women to take action against climate change.</p>
 
